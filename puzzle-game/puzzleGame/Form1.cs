@@ -148,6 +148,84 @@ namespace puzzleGame
             karistir();
         }
 
-        //BUTONLARDAKİ RESİMLERİN YERİ DEĞİŞİYOR FAKAT KONUM KONTROLÜNÜ LİNKEDLİST ÜZERİNDEN YAPMAK GEREKİYOR, BUNUN ÜZERİNDE DURULACAK!
+        private Image firstImage;
+        private Button firstButton;
+        private Button secondButton;
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Button currentButton = (Button)sender;
+
+            if (firstImage == null)//Eğer şu an içinde bulunulan butonu birinci olarak seçtiysen
+            {
+                // İlk buton seçildiğinde
+                firstImage = currentButton.Image;
+                firstButton = currentButton;
+            }
+            else//Eğer şu an içinde bulunulan butonu ikinci olarak seçtiysen
+            {
+                // İkinci buton seçildiğinde
+                secondButton = currentButton;
+
+                LinkedListNode<Image> node1 = null;//Image sınıfı türünden bir düğüm elde ediyoruz
+                LinkedListNode<Image> node2 = null;//Image sınıfı türünden bir düğüm elde ediyoruz
+
+                node1 = mixedLinkedList.Find(value: firstButton.Image);//Birinci butonun resim değerine sahip olan düğümü buluyoruz
+                node2 = mixedLinkedList.Find(value: secondButton.Image);//İkinci butonun resim değerine sahip olan düğümü buluyoruz
+                Swap(mixedLinkedList, node1, node2);
+
+                LinkedListNode<Image> current = mixedLinkedList.First;//Karışık listenin ilk düğümünü yeni bir düğüme atıyoruz
+                for (int i = 1; i <= 16; i++)//Burada Swap fonksiyonu ile güncellenen mixedLinkedList'i yeniden butonlara atıyoruz
+                {
+                    var button = Controls.Find($"button{i}", true).FirstOrDefault() as Button;
+                    if (button != null)
+                    {
+                        button.Image = current.Value;
+                        current = current.Next;
+                    }
+                }
+
+                //Doğru olan sıralı liste ile karışık listenin her bir düğümü sırasıyla karşılaştırılmalı doğru olduğu tespit edilen buton deaktif olmalı
+                LinkedListNode<Image> mixedTemp = mixedLinkedList.First;//Image sınıfı türünden bir düğüm elde ediyoruz
+                LinkedListNode<Image> temp = linkedList.First;//Image sınıfı türünden bir düğüm elde ediyoruz
+                while (temp.Next != null)
+                {
+                    if (temp.Value == mixedTemp.Value)
+                    {
+                        for (int i = 1; i <= 16; i++)//16 buton var bunlardan düğüm değeri ile eşleşeni buluyoruz
+                        {
+                            var button = Controls.Find($"button{i}", true).FirstOrDefault() as Button;
+                            if (button.Image == mixedTemp.Value)
+                                button.Enabled = false;
+                        }
+                    }
+                    temp = temp.Next;
+                    mixedTemp = mixedTemp.Next;
+                }
+
+                if (button16.Image==linkedList.Last.Value)
+                    button16.Enabled = false;
+
+                //Depolanan resmi, ikinci butona atayın
+                firstImage = null;
+                firstButton = null;
+                secondButton = null;
+            }
+        }
+
+        //Swap fonksiyonu sayesinde seçilen butonlardaki resimlere sahip olan düğümlerin yerlerini değiştiriyoruz
+        public static void Swap(LinkedList<Image> list, LinkedListNode<Image> node1, LinkedListNode<Image> node2)
+        {
+            if (list == null || node1 == null || node2 == null)
+                return;
+
+            if (node1 == node2)
+                return;
+
+            // Düğümlerin değerlerini geçici değişkenlerde depoluyoruz
+            Image tempValue = node1.Value;
+            node1.Value = node2.Value;
+            node2.Value = tempValue;
+        }
     }
 }
