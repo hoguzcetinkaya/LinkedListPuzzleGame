@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,12 +14,15 @@ namespace puzzleGame
 {
     public partial class Form1 : Form
     {
+        Dosya dosya = new Dosya();
         LinkedList<Image> linkedList = new LinkedList<Image>();//Image sınıfı türünden bir bağlı liste oluşturduk
         LinkedList<Image> mixedLinkedList = new LinkedList<Image>();//Image sınıfı türünden bir bağlı liste daha oluşturduk, bu listeyi karıştırılan parçalar için kullanacağız
 
-        public Form1()
+        private string kullaniciAdi;
+        public Form1(string kullaniciAdiForm2)
         {
             InitializeComponent();
+            this.kullaniciAdi = kullaniciAdiForm2;
         }
 
         private void original_Click(object sender, EventArgs e)
@@ -38,6 +43,7 @@ namespace puzzleGame
                 original.Image = Image.FromFile(openFileDialog1.FileName);
                 parcala();
             }
+
         }
 
         private void parcala()
@@ -72,6 +78,7 @@ namespace puzzleGame
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            mix.Enabled = false;
             for (int i = 1; i <= 16; i++)//Form ilk açıldığında puzzle parçaları kullanılabilir değildir
             {
                 var button = Controls.Find($"button{i}", true).FirstOrDefault() as Button;
@@ -80,6 +87,16 @@ namespace puzzleGame
                     button.Enabled = false;
                 }
             }
+
+            if (!File.Exists(dosya.DosyaYolu)) //dosyaYolunda dosya yok ise içeriye gir
+            {
+                using (StreamWriter sw = File.CreateText(dosya.DosyaYolu)) //Belirtilen dosya yolunda dosya yoksa oluştur
+                {
+                    sw.WriteLine("Ad,Hamle,Puan"); //Oluşturulan veriye ilk satırını ekle
+                }
+            }
+
+            isimLabel.Text = kullaniciAdi;//Form2'den gelen kullanıcı adı labela aktarılıyor
         }
 
         private void karistir()//Sadece 16. parça doğru yerde olunca en az bir tanesi doğru yerde diye algılamıyor
@@ -119,6 +136,7 @@ namespace puzzleGame
             if (count >= 1)//En az bir parça doğru yerde mi diye kontrol ediyor
             {
                 mix.Enabled = false;//Parçalardan en az bir tanesi doğru yerdeyse artık karıştırma butonu aktif olmasın yani karıştırma yapılamasın
+                original.Enabled = false;//Parçalardan en az bir tanesi doğru yerdeyse artık fotoğraf seçme işlemine izin verilmesin
 
                 for (int i = 1; i <= 16; i++)//Karıştırma işlemi düzgün şekilde bitti ve karıştırma butonu deaktif oldu puzzle parçaları aktif oldu
                 {
@@ -151,6 +169,8 @@ namespace puzzleGame
         private Image firstImage;
         private Button firstButton;
         private Button secondButton;
+        int hamleSayac = 0;
+        int skorSayac = 0;
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -164,6 +184,8 @@ namespace puzzleGame
             }
             else//Eğer şu an içinde bulunulan butonu ikinci olarak seçtiysen
             {
+                hamleSayac++;//Her hamle yapıldığında sayaç artsın
+                hamleLabel.Text = hamleSayac.ToString();
                 // İkinci buton seçildiğinde
                 secondButton = currentButton;
 
@@ -195,16 +217,27 @@ namespace puzzleGame
                         for (int i = 1; i <= 16; i++)//16 buton var bunlardan düğüm değeri ile eşleşeni buluyoruz
                         {
                             var button = Controls.Find($"button{i}", true).FirstOrDefault() as Button;
-                            if (button.Image == mixedTemp.Value)
-                                button.Enabled = false;
+                            if (button.Image == mixedTemp.Value)//Bu satır her bir düğümü tekrar tekrar işleme tabi tutuyor
+                            {
+                                if (button.Enabled != false)//O yüzden bu satırda sadece false olmayanları işleme alıyoruz
+                                {
+                                    button.Enabled = false;//Doğru yerde olan buton deaktif olsun
+                                    skorSayac += 5;
+                                    skorLabel.Text = skorSayac.ToString();
+                                }
+                            }
                         }
                     }
                     temp = temp.Next;
                     mixedTemp = mixedTemp.Next;
                 }
 
-                if (button16.Image==linkedList.Last.Value)
+                if (button16.Image == linkedList.Last.Value)//16 doğru yerdeyse her sferinde 16 için ekstra puan veriyor
+                {
                     button16.Enabled = false;
+                    skorSayac += 5;
+                    skorLabel.Text = skorSayac.ToString();
+                }
 
                 //Depolanan resmi, ikinci butona atayın
                 firstImage = null;

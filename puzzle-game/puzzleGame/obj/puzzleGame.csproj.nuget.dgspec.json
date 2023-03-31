@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\VisualStudioExamples\\Form\\adasdas\\yazlab-puzzle-game-master\\yazlab-puzzle-game-master\\puzzleGame\\puzzleGame.csproj": {}
+    "C:\\Users\\kuzha\\Downloads\\yazlab-puzzle-game-master\\yazlab-puzzle-game-master\\puzzleGame\\puzzleGame.csproj": {}
   },
   "projects": {
-    "D:\\VisualStudioExamples\\Form\\adasdas\\yazlab-puzzle-game-master\\yazlab-puzzle-game-master\\puzzleGame\\puzzleGame.csproj": {
+    "C:\\Users\\kuzha\\Downloads\\yazlab-puzzle-game-master\\yazlab-puzzle-game-master\\puzzleGame\\puzzleGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VisualStudioExamples\\Form\\adasdas\\yazlab-puzzle-game-master\\yazlab-puzzle-game-master\\puzzleGame\\puzzleGame.csproj",
+        "projectUniqueName": "C:\\Users\\kuzha\\Downloads\\yazlab-puzzle-game-master\\yazlab-puzzle-game-master\\puzzleGame\\puzzleGame.csproj",
         "projectName": "puzzleGame",
-        "projectPath": "D:\\VisualStudioExamples\\Form\\adasdas\\yazlab-puzzle-game-master\\yazlab-puzzle-game-master\\puzzleGame\\puzzleGame.csproj",
-        "packagesPath": "C:\\Users\\husey\\.nuget\\packages\\",
-        "outputPath": "D:\\VisualStudioExamples\\Form\\adasdas\\yazlab-puzzle-game-master\\yazlab-puzzle-game-master\\puzzleGame\\obj\\",
+        "projectPath": "C:\\Users\\kuzha\\Downloads\\yazlab-puzzle-game-master\\yazlab-puzzle-game-master\\puzzleGame\\puzzleGame.csproj",
+        "packagesPath": "C:\\Users\\kuzha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kuzha\\Downloads\\yazlab-puzzle-game-master\\yazlab-puzzle-game-master\\puzzleGame\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\husey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kuzha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0-windows7.0"
+          "net5.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -45,7 +45,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -57,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
