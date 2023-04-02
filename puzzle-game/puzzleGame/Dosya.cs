@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace puzzleGame
 {
@@ -11,7 +13,8 @@ namespace puzzleGame
         public string DosyaYolu;
         public Dosya()
         {
-            DosyaYolu = "C:\\Users\\kuzha\\Downloads\\yazlab-puzzle-game-master\\yazlab-puzzle-game-master\\puzzleGame\\enyuksekskor.txt";
+            string projeKlasoru = Directory.GetParent(Application.StartupPath).FullName;
+            DosyaYolu = Path.Combine(projeKlasoru, "enyuksekskor.txt");
         }
     }
 }

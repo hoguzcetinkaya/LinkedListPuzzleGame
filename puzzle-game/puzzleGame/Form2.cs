@@ -39,9 +39,22 @@ namespace puzzleGame
         {
             if (textBox1.Text != "")
             {
-                Form1 frm1 = new Form1(textBox1.Text);
+                Form1 frm1 = new Form1(textBox1.Text.ToUpper());
                 this.Hide();
                 frm1.Show();
+            }
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (textBox1.Text != "")
+                {
+                    Form1 frm1 = new Form1(textBox1.Text.ToUpper());
+                    this.Hide();
+                    frm1.Show();
+                }
             }
         }
     }

@@ -63,6 +63,16 @@ namespace puzzleGame.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap _2156727b8087808495258eda220b6b0c {
+            get {
+                object obj = ResourceManager.GetObject("2156727b8087808495258eda220b6b0c", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap check_mark {
             get {
                 object obj = ResourceManager.GetObject("check-mark", resourceCulture);

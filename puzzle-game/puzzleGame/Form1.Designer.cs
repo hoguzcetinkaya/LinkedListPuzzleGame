@@ -54,6 +54,7 @@
             isimLabel = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
             hamleLabel = new System.Windows.Forms.Label();
+            listBox1 = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)original).BeginInit();
             SuspendLayout();
             // 
@@ -70,7 +71,7 @@
             // 
             // button1
             // 
-            button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            button1.BackColor = System.Drawing.SystemColors.Window;
             button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button1.Location = new System.Drawing.Point(225, 12);
             button1.Margin = new System.Windows.Forms.Padding(0);
@@ -83,7 +84,7 @@
             // 
             // button2
             // 
-            button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            button2.BackColor = System.Drawing.SystemColors.Window;
             button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button2.Location = new System.Drawing.Point(325, 12);
             button2.Margin = new System.Windows.Forms.Padding(0);
@@ -96,7 +97,7 @@
             // 
             // button3
             // 
-            button3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            button3.BackColor = System.Drawing.SystemColors.Window;
             button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button3.Location = new System.Drawing.Point(425, 12);
             button3.Margin = new System.Windows.Forms.Padding(0);
@@ -109,7 +110,7 @@
             // 
             // button4
             // 
-            button4.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            button4.BackColor = System.Drawing.SystemColors.Window;
             button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button4.Location = new System.Drawing.Point(525, 12);
             button4.Margin = new System.Windows.Forms.Padding(0);
@@ -122,7 +123,7 @@
             // 
             // button5
             // 
-            button5.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            button5.BackColor = System.Drawing.SystemColors.Window;
             button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button5.Location = new System.Drawing.Point(225, 112);
             button5.Margin = new System.Windows.Forms.Padding(0);
@@ -135,7 +136,7 @@
             // 
             // button6
             // 
-            button6.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            button6.BackColor = System.Drawing.SystemColors.Window;
             button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button6.Location = new System.Drawing.Point(325, 112);
             button6.Margin = new System.Windows.Forms.Padding(0);
@@ -148,7 +149,7 @@
             // 
             // button7
             // 
-            button7.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            button7.BackColor = System.Drawing.SystemColors.Window;
             button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button7.Location = new System.Drawing.Point(425, 112);
             button7.Margin = new System.Windows.Forms.Padding(0);
@@ -161,7 +162,7 @@
             // 
             // button8
             // 
-            button8.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            button8.BackColor = System.Drawing.SystemColors.Window;
             button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button8.Location = new System.Drawing.Point(525, 112);
             button8.Margin = new System.Windows.Forms.Padding(0);
@@ -174,7 +175,7 @@
             // 
             // button9
             // 
-            button9.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            button9.BackColor = System.Drawing.SystemColors.Window;
             button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button9.Location = new System.Drawing.Point(225, 212);
             button9.Margin = new System.Windows.Forms.Padding(0);
@@ -187,7 +188,7 @@
             // 
             // button10
             // 
-            button10.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            button10.BackColor = System.Drawing.SystemColors.Window;
             button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button10.Location = new System.Drawing.Point(325, 212);
             button10.Margin = new System.Windows.Forms.Padding(0);
@@ -200,7 +201,7 @@
             // 
             // button11
             // 
-            button11.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            button11.BackColor = System.Drawing.SystemColors.Window;
             button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button11.Location = new System.Drawing.Point(425, 212);
             button11.Margin = new System.Windows.Forms.Padding(0);
@@ -213,7 +214,7 @@
             // 
             // button12
             // 
-            button12.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            button12.BackColor = System.Drawing.SystemColors.Window;
             button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button12.Location = new System.Drawing.Point(525, 212);
             button12.Margin = new System.Windows.Forms.Padding(0);
@@ -226,7 +227,7 @@
             // 
             // button13
             // 
-            button13.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            button13.BackColor = System.Drawing.SystemColors.Window;
             button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button13.Location = new System.Drawing.Point(225, 312);
             button13.Margin = new System.Windows.Forms.Padding(0);
@@ -239,7 +240,7 @@
             // 
             // button14
             // 
-            button14.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            button14.BackColor = System.Drawing.SystemColors.Window;
             button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button14.Location = new System.Drawing.Point(325, 312);
             button14.Margin = new System.Windows.Forms.Padding(0);
@@ -252,7 +253,7 @@
             // 
             // button15
             // 
-            button15.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            button15.BackColor = System.Drawing.SystemColors.Window;
             button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button15.Location = new System.Drawing.Point(425, 312);
             button15.Margin = new System.Windows.Forms.Padding(0);
@@ -265,7 +266,7 @@
             // 
             // button16
             // 
-            button16.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            button16.BackColor = System.Drawing.SystemColors.Window;
             button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button16.Location = new System.Drawing.Point(525, 312);
             button16.Margin = new System.Windows.Forms.Padding(0);
@@ -282,7 +283,7 @@
             // 
             // mix
             // 
-            mix.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            mix.BackColor = System.Drawing.SystemColors.Window;
             mix.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             mix.Location = new System.Drawing.Point(12, 218);
             mix.Name = "mix";
@@ -319,7 +320,7 @@
             label2.AutoSize = true;
             label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            label2.Location = new System.Drawing.Point(637, 123);
+            label2.Location = new System.Drawing.Point(639, 122);
             label2.Name = "label2";
             label2.Size = new System.Drawing.Size(203, 27);
             label2.TabIndex = 22;
@@ -358,11 +359,24 @@
             hamleLabel.TabIndex = 25;
             hamleLabel.Text = "0";
             // 
+            // listBox1
+            // 
+            listBox1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 25;
+            listBox1.Location = new System.Drawing.Point(639, 161);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new System.Drawing.Size(203, 254);
+            listBox1.TabIndex = 26;
+            // 
             // Form1
             // 
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            BackColor = System.Drawing.SystemColors.ControlLight;
+            BackColor = System.Drawing.SystemColors.Window;
+            BackgroundImage = Properties.Resources._2156727b8087808495258eda220b6b0c;
+            BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             ClientSize = new System.Drawing.Size(859, 455);
+            Controls.Add(listBox1);
             Controls.Add(hamleLabel);
             Controls.Add(label3);
             Controls.Add(isimLabel);
@@ -388,10 +402,14 @@
             Controls.Add(button1);
             Controls.Add(original);
             Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Form1";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "Puzzle Game";
+            FormClosing += Form1_FormClosing;
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)original).EndInit();
             ResumeLayout(false);
@@ -425,5 +443,6 @@
         private System.Windows.Forms.Label isimLabel;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label hamleLabel;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }

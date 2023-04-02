@@ -37,3 +37,23 @@ C:\Users\kuzha\Downloads\yazlab-puzzle-game-master\yazlab-puzzle-game-master\puz
 C:\Users\kuzha\Downloads\yazlab-puzzle-game-master\yazlab-puzzle-game-master\puzzleGame\obj\Debug\net5.0-windows\puzzleGame.genruntimeconfig.cache
 C:\Users\kuzha\Downloads\yazlab-puzzle-game-master\yazlab-puzzle-game-master\puzzleGame\obj\Debug\net5.0-windows\ref\puzzleGame.dll
 C:\Users\kuzha\Downloads\yazlab-puzzle-game-master\yazlab-puzzle-game-master\puzzleGame\obj\Debug\net5.0-windows\puzzleGame.Form2.resources
+D:\BSM\Yazılım Geliştirme Laboratuvarı-II\yazlab-puzzle-game-master\puzzleGame\bin\Debug\net5.0-windows\puzzleGame.exe
+D:\BSM\Yazılım Geliştirme Laboratuvarı-II\yazlab-puzzle-game-master\puzzleGame\bin\Debug\net5.0-windows\puzzleGame.deps.json
+D:\BSM\Yazılım Geliştirme Laboratuvarı-II\yazlab-puzzle-game-master\puzzleGame\bin\Debug\net5.0-windows\puzzleGame.runtimeconfig.json
+D:\BSM\Yazılım Geliştirme Laboratuvarı-II\yazlab-puzzle-game-master\puzzleGame\bin\Debug\net5.0-windows\puzzleGame.runtimeconfig.dev.json
+D:\BSM\Yazılım Geliştirme Laboratuvarı-II\yazlab-puzzle-game-master\puzzleGame\bin\Debug\net5.0-windows\puzzleGame.dll
+D:\BSM\Yazılım Geliştirme Laboratuvarı-II\yazlab-puzzle-game-master\puzzleGame\bin\Debug\net5.0-windows\puzzleGame.pdb
+D:\BSM\Yazılım Geliştirme Laboratuvarı-II\yazlab-puzzle-game-master\puzzleGame\obj\Debug\net5.0-windows\puzzleGame.csproj.AssemblyReference.cache
+D:\BSM\Yazılım Geliştirme Laboratuvarı-II\yazlab-puzzle-game-master\puzzleGame\obj\Debug\net5.0-windows\puzzleGame.Form1.resources
+D:\BSM\Yazılım Geliştirme Laboratuvarı-II\yazlab-puzzle-game-master\puzzleGame\obj\Debug\net5.0-windows\puzzleGame.Form2.resources
+D:\BSM\Yazılım Geliştirme Laboratuvarı-II\yazlab-puzzle-game-master\puzzleGame\obj\Debug\net5.0-windows\puzzleGame.Properties.Resources.resources
+D:\BSM\Yazılım Geliştirme Laboratuvarı-II\yazlab-puzzle-game-master\puzzleGame\obj\Debug\net5.0-windows\puzzleGame.csproj.GenerateResource.cache
+D:\BSM\Yazılım Geliştirme Laboratuvarı-II\yazlab-puzzle-game-master\puzzleGame\obj\Debug\net5.0-windows\puzzleGame.GeneratedMSBuildEditorConfig.editorconfig
+D:\BSM\Yazılım Geliştirme Laboratuvarı-II\yazlab-puzzle-game-master\puzzleGame\obj\Debug\net5.0-windows\puzzleGame.AssemblyInfoInputs.cache
+D:\BSM\Yazılım Geliştirme Laboratuvarı-II\yazlab-puzzle-game-master\puzzleGame\obj\Debug\net5.0-windows\puzzleGame.AssemblyInfo.cs
+D:\BSM\Yazılım Geliştirme Laboratuvarı-II\yazlab-puzzle-game-master\puzzleGame\obj\Debug\net5.0-windows\puzzleGame.csproj.CoreCompileInputs.cache
+D:\BSM\Yazılım Geliştirme Laboratuvarı-II\yazlab-puzzle-game-master\puzzleGame\obj\Debug\net5.0-windows\puzzleGame.dll
+D:\BSM\Yazılım Geliştirme Laboratuvarı-II\yazlab-puzzle-game-master\puzzleGame\obj\Debug\net5.0-windows\refint\puzzleGame.dll
+D:\BSM\Yazılım Geliştirme Laboratuvarı-II\yazlab-puzzle-game-master\puzzleGame\obj\Debug\net5.0-windows\puzzleGame.pdb
+D:\BSM\Yazılım Geliştirme Laboratuvarı-II\yazlab-puzzle-game-master\puzzleGame\obj\Debug\net5.0-windows\puzzleGame.genruntimeconfig.cache
+D:\BSM\Yazılım Geliştirme Laboratuvarı-II\yazlab-puzzle-game-master\puzzleGame\obj\Debug\net5.0-windows\ref\puzzleGame.dll

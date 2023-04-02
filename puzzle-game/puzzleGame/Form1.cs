@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -96,6 +97,7 @@ namespace puzzleGame
                 }
             }
 
+            listele();
             isimLabel.Text = kullaniciAdi;//Form2'den gelen kullanıcı adı labela aktarılıyor
         }
 
@@ -171,9 +173,11 @@ namespace puzzleGame
         private Button secondButton;
         int hamleSayac = 0;
         int skorSayac = 0;
+        int eslesmeSayac = 0;
 
         private void button1_Click(object sender, EventArgs e)
         {
+            bool dogruHamleMi = false;
             Button currentButton = (Button)sender;
 
             if (firstImage == null)//Eğer şu an içinde bulunulan butonu birinci olarak seçtiysen
@@ -210,7 +214,7 @@ namespace puzzleGame
                 //Doğru olan sıralı liste ile karışık listenin her bir düğümü sırasıyla karşılaştırılmalı doğru olduğu tespit edilen buton deaktif olmalı
                 LinkedListNode<Image> mixedTemp = mixedLinkedList.First;//Image sınıfı türünden bir düğüm elde ediyoruz
                 LinkedListNode<Image> temp = linkedList.First;//Image sınıfı türünden bir düğüm elde ediyoruz
-                while (temp.Next != null)
+                while (temp != null)
                 {
                     if (temp.Value == mixedTemp.Value)
                     {
@@ -222,8 +226,9 @@ namespace puzzleGame
                                 if (button.Enabled != false)//O yüzden bu satırda sadece false olmayanları işleme alıyoruz
                                 {
                                     button.Enabled = false;//Doğru yerde olan buton deaktif olsun
-                                    skorSayac += 5;
+                                    skorSayac += 5; eslesmeSayac++;
                                     skorLabel.Text = skorSayac.ToString();
+                                    dogruHamleMi = true;
                                 }
                             }
                         }
@@ -232,11 +237,24 @@ namespace puzzleGame
                     mixedTemp = mixedTemp.Next;
                 }
 
-                if (button16.Image == linkedList.Last.Value)//16 doğru yerdeyse her sferinde 16 için ekstra puan veriyor
+                if (dogruHamleMi == false)
                 {
-                    button16.Enabled = false;
-                    skorSayac += 5;
+                    skorSayac -= 10;
                     skorLabel.Text = skorSayac.ToString();
+                }
+
+                if (eslesmeSayac == 16)
+                {
+                    MessageBox.Show("Tüm parçaları doğru yere koymayı başardınız! Yeniden oynamak için bir resim seçiniz.", "TEBRİKLER", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    yazdir(hamleSayac, skorSayac);
+                    listele();
+                    original.Enabled = true;
+                    hamleSayac = 0;
+                    skorSayac = 0;
+                    eslesmeSayac = 0;
+                    skorLabel.Text = skorSayac.ToString();
+                    hamleLabel.Text = hamleSayac.ToString();
+                    original.Image = null;
                 }
 
                 //Depolanan resmi, ikinci butona atayın
@@ -259,6 +277,54 @@ namespace puzzleGame
             Image tempValue = node1.Value;
             node1.Value = node2.Value;
             node2.Value = tempValue;
+        }
+
+        void yazdir(int hamleSayac, int skorSayac)
+        {
+            string satir = kullaniciAdi + "," + hamleSayac.ToString() + "," + skorSayac.ToString();
+            using (StreamWriter sw = File.AppendText(dosya.DosyaYolu))
+            {
+                sw.WriteLine(satir);
+            }
+        }
+
+        void listele()
+        {
+            listBox1.Items.Clear();
+            List<string> kayitlar = new List<string>(); // Tutulacak verilerin listelenmesi için bir List<> oluşturduk
+
+            using (StreamReader sr = new StreamReader(dosya.DosyaYolu)) // Hangi dosyanın okunacağını belirttik
+            {
+                string satir;
+                while ((satir = sr.ReadLine()) != null) // Eğer ki okunan dosyanın içerisinde okunma devam ediyorsa yani satır değişkeni null dönmüyorsa döngü devam etsin
+                {
+                    string[] sutun = satir.Split(','); // her seferinde okunan veriyi parçalıyoruz
+                    if (sutun[2] != "Puan") // bu parçalamanın tek sebebi başlangıçta oluşturduğumuz sütunların eklenmemesi
+                    {
+                        string kayit = sutun[0] + "," + sutun[2];
+                        kayitlar.Add(kayit);
+                    }
+                }
+            }
+            //Sort fonksiyonu listeyi küçükten büyüğe sıralamamıza yarıyor fakat burada bizim istediğimiz yapı ise şudur;
+            //List<string> bir yapının içerisindeki int yapıya göre sıralama yapılması yani "25" ifadesini convert yapıp işleme tutuyor.
+            //Bu sayede Puanlara göre bir listeleme yapıyoruz
+            kayitlar.Sort((x, y) => Convert.ToInt32(x.Split(',')[1]).CompareTo(Convert.ToInt32(y.Split(',')[1])));
+            kayitlar.Reverse(); //Puanlamaya göre yapılan sıralamayı büyükten küçüğe çeviriyoruz
+            int sayac = 1;
+            foreach (var item in kayitlar)
+            {
+                if (sayac <= 10)
+                {
+                    sayac++;
+                    listBox1.Items.Add(item);
+                }
+            }
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

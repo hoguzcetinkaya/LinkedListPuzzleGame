@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kuzha\\Downloads\\yazlab-puzzle-game-master\\yazlab-puzzle-game-master\\puzzleGame\\puzzleGame.csproj": {}
+    "D:\\BSM\\Yazılım Geliştirme Laboratuvarı-II\\yazlab-puzzle-game-master\\puzzleGame\\puzzleGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kuzha\\Downloads\\yazlab-puzzle-game-master\\yazlab-puzzle-game-master\\puzzleGame\\puzzleGame.csproj": {
+    "D:\\BSM\\Yazılım Geliştirme Laboratuvarı-II\\yazlab-puzzle-game-master\\puzzleGame\\puzzleGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kuzha\\Downloads\\yazlab-puzzle-game-master\\yazlab-puzzle-game-master\\puzzleGame\\puzzleGame.csproj",
+        "projectUniqueName": "D:\\BSM\\Yazılım Geliştirme Laboratuvarı-II\\yazlab-puzzle-game-master\\puzzleGame\\puzzleGame.csproj",
         "projectName": "puzzleGame",
-        "projectPath": "C:\\Users\\kuzha\\Downloads\\yazlab-puzzle-game-master\\yazlab-puzzle-game-master\\puzzleGame\\puzzleGame.csproj",
+        "projectPath": "D:\\BSM\\Yazılım Geliştirme Laboratuvarı-II\\yazlab-puzzle-game-master\\puzzleGame\\puzzleGame.csproj",
         "packagesPath": "C:\\Users\\kuzha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kuzha\\Downloads\\yazlab-puzzle-game-master\\yazlab-puzzle-game-master\\puzzleGame\\obj\\",
+        "outputPath": "D:\\BSM\\Yazılım Geliştirme Laboratuvarı-II\\yazlab-puzzle-game-master\\puzzleGame\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kuzha\\AppData\\Roaming\\NuGet\\NuGet.Config",
