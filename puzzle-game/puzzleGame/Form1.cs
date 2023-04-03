@@ -125,7 +125,7 @@ namespace puzzleGame
             LinkedListNode<Image> mixedLinkedListNode = mixedLinkedList.First;//Karışık listenin ilk düğümü
             LinkedListNode<Image> linkedListNode = linkedList.First;//Düzgün listenin ilk düğümü
             int count = 0;//Her iki listede de parçalar aynıysa artacak olan sayaç
-            while (mixedLinkedListNode.Next != null)
+            while (mixedLinkedListNode != null)
             {
                 if (mixedLinkedListNode.Value == linkedListNode.Value)
                 {

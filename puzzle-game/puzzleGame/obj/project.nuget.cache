@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iK+/yjVEuNzsijTJGy/Jr5kaK2S+Uk5qt82TCnC8S2VCK5Zb9gdf8ItZLjjDbEd+jWQd1UUD85Ntv+A+ORInqQ==",
+  "dgSpecHash": "NhxhWp0o9bjcTRKdOx6HIZa1RDh0vR5eeuLgQhdTpV9LxbAcAE7Be6+oVaCwAcqx2pYbEEXFYxq/DInwqldcfg==",
   "success": true,
-  "projectFilePath": "D:\\BSM\\Yazılım Geliştirme Laboratuvarı-II\\yazlab-puzzle-game-master\\puzzleGame\\puzzleGame.csproj",
+  "projectFilePath": "D:\\VisualStudioExamples\\Form\\YazLab\\puzzle-game\\puzzleGame\\puzzleGame.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
