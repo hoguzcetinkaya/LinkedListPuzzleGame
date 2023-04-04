@@ -42,7 +42,7 @@ namespace puzzleGame
             {
                 mix.Enabled = true;
                 original.Image = Image.FromFile(openFileDialog1.FileName);
-                parcala();
+                parcala();  // OpenFileDialog ile yüklenen resmin parçalama işlemi için gerekli fonksiyon
             }
 
         }

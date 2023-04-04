@@ -29,391 +29,372 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            original = new System.Windows.Forms.PictureBox();
-            button1 = new System.Windows.Forms.Button();
-            button2 = new System.Windows.Forms.Button();
-            button3 = new System.Windows.Forms.Button();
-            button4 = new System.Windows.Forms.Button();
-            button5 = new System.Windows.Forms.Button();
-            button6 = new System.Windows.Forms.Button();
-            button7 = new System.Windows.Forms.Button();
-            button8 = new System.Windows.Forms.Button();
-            button9 = new System.Windows.Forms.Button();
-            button10 = new System.Windows.Forms.Button();
-            button11 = new System.Windows.Forms.Button();
-            button12 = new System.Windows.Forms.Button();
-            button13 = new System.Windows.Forms.Button();
-            button14 = new System.Windows.Forms.Button();
-            button15 = new System.Windows.Forms.Button();
-            button16 = new System.Windows.Forms.Button();
-            openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            mix = new System.Windows.Forms.Button();
-            label1 = new System.Windows.Forms.Label();
-            skorLabel = new System.Windows.Forms.Label();
-            label2 = new System.Windows.Forms.Label();
-            isimLabel = new System.Windows.Forms.Label();
-            label3 = new System.Windows.Forms.Label();
-            hamleLabel = new System.Windows.Forms.Label();
-            listBox1 = new System.Windows.Forms.ListBox();
-            ((System.ComponentModel.ISupportInitialize)original).BeginInit();
-            SuspendLayout();
+            this.original = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.mix = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.skorLabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.isimLabel = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.hamleLabel = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            ((System.ComponentModel.ISupportInitialize)(this.original)).BeginInit();
+            this.SuspendLayout();
             // 
             // original
             // 
-            original.BackgroundImage = Properties.Resources.upload;
-            original.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            original.Location = new System.Drawing.Point(12, 12);
-            original.Name = "original";
-            original.Size = new System.Drawing.Size(200, 200);
-            original.TabIndex = 0;
-            original.TabStop = false;
-            original.Click += original_Click;
+            this.original.BackgroundImage = global::puzzleGame.Properties.Resources.upload;
+            this.original.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.original.Location = new System.Drawing.Point(12, 12);
+            this.original.Name = "original";
+            this.original.Size = new System.Drawing.Size(200, 200);
+            this.original.TabIndex = 0;
+            this.original.TabStop = false;
             // 
             // button1
             // 
-            button1.BackColor = System.Drawing.SystemColors.Window;
-            button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button1.Location = new System.Drawing.Point(225, 12);
-            button1.Margin = new System.Windows.Forms.Padding(0);
-            button1.Name = "button1";
-            button1.Size = new System.Drawing.Size(100, 100);
-            button1.TabIndex = 1;
-            button1.TabStop = false;
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            this.button1.BackColor = System.Drawing.SystemColors.Window;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(225, 12);
+            this.button1.Margin = new System.Windows.Forms.Padding(0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 100);
+            this.button1.TabIndex = 1;
+            this.button1.TabStop = false;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
-            button2.BackColor = System.Drawing.SystemColors.Window;
-            button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button2.Location = new System.Drawing.Point(325, 12);
-            button2.Margin = new System.Windows.Forms.Padding(0);
-            button2.Name = "button2";
-            button2.Size = new System.Drawing.Size(100, 100);
-            button2.TabIndex = 2;
-            button2.TabStop = false;
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button1_Click;
+            this.button2.BackColor = System.Drawing.SystemColors.Window;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(325, 12);
+            this.button2.Margin = new System.Windows.Forms.Padding(0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 100);
+            this.button2.TabIndex = 2;
+            this.button2.TabStop = false;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
-            button3.BackColor = System.Drawing.SystemColors.Window;
-            button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button3.Location = new System.Drawing.Point(425, 12);
-            button3.Margin = new System.Windows.Forms.Padding(0);
-            button3.Name = "button3";
-            button3.Size = new System.Drawing.Size(100, 100);
-            button3.TabIndex = 3;
-            button3.TabStop = false;
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button1_Click;
+            this.button3.BackColor = System.Drawing.SystemColors.Window;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(425, 12);
+            this.button3.Margin = new System.Windows.Forms.Padding(0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(100, 100);
+            this.button3.TabIndex = 3;
+            this.button3.TabStop = false;
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // button4
             // 
-            button4.BackColor = System.Drawing.SystemColors.Window;
-            button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button4.Location = new System.Drawing.Point(525, 12);
-            button4.Margin = new System.Windows.Forms.Padding(0);
-            button4.Name = "button4";
-            button4.Size = new System.Drawing.Size(100, 100);
-            button4.TabIndex = 4;
-            button4.TabStop = false;
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += button1_Click;
+            this.button4.BackColor = System.Drawing.SystemColors.Window;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(525, 12);
+            this.button4.Margin = new System.Windows.Forms.Padding(0);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(100, 100);
+            this.button4.TabIndex = 4;
+            this.button4.TabStop = false;
+            this.button4.UseVisualStyleBackColor = false;
             // 
             // button5
             // 
-            button5.BackColor = System.Drawing.SystemColors.Window;
-            button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button5.Location = new System.Drawing.Point(225, 112);
-            button5.Margin = new System.Windows.Forms.Padding(0);
-            button5.Name = "button5";
-            button5.Size = new System.Drawing.Size(100, 100);
-            button5.TabIndex = 5;
-            button5.TabStop = false;
-            button5.UseVisualStyleBackColor = false;
-            button5.Click += button1_Click;
+            this.button5.BackColor = System.Drawing.SystemColors.Window;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(225, 112);
+            this.button5.Margin = new System.Windows.Forms.Padding(0);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(100, 100);
+            this.button5.TabIndex = 5;
+            this.button5.TabStop = false;
+            this.button5.UseVisualStyleBackColor = false;
             // 
             // button6
             // 
-            button6.BackColor = System.Drawing.SystemColors.Window;
-            button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button6.Location = new System.Drawing.Point(325, 112);
-            button6.Margin = new System.Windows.Forms.Padding(0);
-            button6.Name = "button6";
-            button6.Size = new System.Drawing.Size(100, 100);
-            button6.TabIndex = 6;
-            button6.TabStop = false;
-            button6.UseVisualStyleBackColor = false;
-            button6.Click += button1_Click;
+            this.button6.BackColor = System.Drawing.SystemColors.Window;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(325, 112);
+            this.button6.Margin = new System.Windows.Forms.Padding(0);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(100, 100);
+            this.button6.TabIndex = 6;
+            this.button6.TabStop = false;
+            this.button6.UseVisualStyleBackColor = false;
             // 
             // button7
             // 
-            button7.BackColor = System.Drawing.SystemColors.Window;
-            button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button7.Location = new System.Drawing.Point(425, 112);
-            button7.Margin = new System.Windows.Forms.Padding(0);
-            button7.Name = "button7";
-            button7.Size = new System.Drawing.Size(100, 100);
-            button7.TabIndex = 7;
-            button7.TabStop = false;
-            button7.UseVisualStyleBackColor = false;
-            button7.Click += button1_Click;
+            this.button7.BackColor = System.Drawing.SystemColors.Window;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(425, 112);
+            this.button7.Margin = new System.Windows.Forms.Padding(0);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(100, 100);
+            this.button7.TabIndex = 7;
+            this.button7.TabStop = false;
+            this.button7.UseVisualStyleBackColor = false;
             // 
             // button8
             // 
-            button8.BackColor = System.Drawing.SystemColors.Window;
-            button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button8.Location = new System.Drawing.Point(525, 112);
-            button8.Margin = new System.Windows.Forms.Padding(0);
-            button8.Name = "button8";
-            button8.Size = new System.Drawing.Size(100, 100);
-            button8.TabIndex = 8;
-            button8.TabStop = false;
-            button8.UseVisualStyleBackColor = false;
-            button8.Click += button1_Click;
+            this.button8.BackColor = System.Drawing.SystemColors.Window;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Location = new System.Drawing.Point(525, 112);
+            this.button8.Margin = new System.Windows.Forms.Padding(0);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(100, 100);
+            this.button8.TabIndex = 8;
+            this.button8.TabStop = false;
+            this.button8.UseVisualStyleBackColor = false;
             // 
             // button9
             // 
-            button9.BackColor = System.Drawing.SystemColors.Window;
-            button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button9.Location = new System.Drawing.Point(225, 212);
-            button9.Margin = new System.Windows.Forms.Padding(0);
-            button9.Name = "button9";
-            button9.Size = new System.Drawing.Size(100, 100);
-            button9.TabIndex = 16;
-            button9.TabStop = false;
-            button9.UseVisualStyleBackColor = false;
-            button9.Click += button1_Click;
+            this.button9.BackColor = System.Drawing.SystemColors.Window;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Location = new System.Drawing.Point(225, 212);
+            this.button9.Margin = new System.Windows.Forms.Padding(0);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(100, 100);
+            this.button9.TabIndex = 16;
+            this.button9.TabStop = false;
+            this.button9.UseVisualStyleBackColor = false;
             // 
             // button10
             // 
-            button10.BackColor = System.Drawing.SystemColors.Window;
-            button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button10.Location = new System.Drawing.Point(325, 212);
-            button10.Margin = new System.Windows.Forms.Padding(0);
-            button10.Name = "button10";
-            button10.Size = new System.Drawing.Size(100, 100);
-            button10.TabIndex = 15;
-            button10.TabStop = false;
-            button10.UseVisualStyleBackColor = false;
-            button10.Click += button1_Click;
+            this.button10.BackColor = System.Drawing.SystemColors.Window;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Location = new System.Drawing.Point(325, 212);
+            this.button10.Margin = new System.Windows.Forms.Padding(0);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(100, 100);
+            this.button10.TabIndex = 15;
+            this.button10.TabStop = false;
+            this.button10.UseVisualStyleBackColor = false;
             // 
             // button11
             // 
-            button11.BackColor = System.Drawing.SystemColors.Window;
-            button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button11.Location = new System.Drawing.Point(425, 212);
-            button11.Margin = new System.Windows.Forms.Padding(0);
-            button11.Name = "button11";
-            button11.Size = new System.Drawing.Size(100, 100);
-            button11.TabIndex = 14;
-            button11.TabStop = false;
-            button11.UseVisualStyleBackColor = false;
-            button11.Click += button1_Click;
+            this.button11.BackColor = System.Drawing.SystemColors.Window;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Location = new System.Drawing.Point(425, 212);
+            this.button11.Margin = new System.Windows.Forms.Padding(0);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(100, 100);
+            this.button11.TabIndex = 14;
+            this.button11.TabStop = false;
+            this.button11.UseVisualStyleBackColor = false;
             // 
             // button12
             // 
-            button12.BackColor = System.Drawing.SystemColors.Window;
-            button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button12.Location = new System.Drawing.Point(525, 212);
-            button12.Margin = new System.Windows.Forms.Padding(0);
-            button12.Name = "button12";
-            button12.Size = new System.Drawing.Size(100, 100);
-            button12.TabIndex = 13;
-            button12.TabStop = false;
-            button12.UseVisualStyleBackColor = false;
-            button12.Click += button1_Click;
+            this.button12.BackColor = System.Drawing.SystemColors.Window;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Location = new System.Drawing.Point(525, 212);
+            this.button12.Margin = new System.Windows.Forms.Padding(0);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(100, 100);
+            this.button12.TabIndex = 13;
+            this.button12.TabStop = false;
+            this.button12.UseVisualStyleBackColor = false;
             // 
             // button13
             // 
-            button13.BackColor = System.Drawing.SystemColors.Window;
-            button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button13.Location = new System.Drawing.Point(225, 312);
-            button13.Margin = new System.Windows.Forms.Padding(0);
-            button13.Name = "button13";
-            button13.Size = new System.Drawing.Size(100, 100);
-            button13.TabIndex = 12;
-            button13.TabStop = false;
-            button13.UseVisualStyleBackColor = false;
-            button13.Click += button1_Click;
+            this.button13.BackColor = System.Drawing.SystemColors.Window;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Location = new System.Drawing.Point(225, 312);
+            this.button13.Margin = new System.Windows.Forms.Padding(0);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(100, 100);
+            this.button13.TabIndex = 12;
+            this.button13.TabStop = false;
+            this.button13.UseVisualStyleBackColor = false;
             // 
             // button14
             // 
-            button14.BackColor = System.Drawing.SystemColors.Window;
-            button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button14.Location = new System.Drawing.Point(325, 312);
-            button14.Margin = new System.Windows.Forms.Padding(0);
-            button14.Name = "button14";
-            button14.Size = new System.Drawing.Size(100, 100);
-            button14.TabIndex = 11;
-            button14.TabStop = false;
-            button14.UseVisualStyleBackColor = false;
-            button14.Click += button1_Click;
+            this.button14.BackColor = System.Drawing.SystemColors.Window;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Location = new System.Drawing.Point(325, 312);
+            this.button14.Margin = new System.Windows.Forms.Padding(0);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(100, 100);
+            this.button14.TabIndex = 11;
+            this.button14.TabStop = false;
+            this.button14.UseVisualStyleBackColor = false;
             // 
             // button15
             // 
-            button15.BackColor = System.Drawing.SystemColors.Window;
-            button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button15.Location = new System.Drawing.Point(425, 312);
-            button15.Margin = new System.Windows.Forms.Padding(0);
-            button15.Name = "button15";
-            button15.Size = new System.Drawing.Size(100, 100);
-            button15.TabIndex = 10;
-            button15.TabStop = false;
-            button15.UseVisualStyleBackColor = false;
-            button15.Click += button1_Click;
+            this.button15.BackColor = System.Drawing.SystemColors.Window;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Location = new System.Drawing.Point(425, 312);
+            this.button15.Margin = new System.Windows.Forms.Padding(0);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(100, 100);
+            this.button15.TabIndex = 10;
+            this.button15.TabStop = false;
+            this.button15.UseVisualStyleBackColor = false;
             // 
             // button16
             // 
-            button16.BackColor = System.Drawing.SystemColors.Window;
-            button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button16.Location = new System.Drawing.Point(525, 312);
-            button16.Margin = new System.Windows.Forms.Padding(0);
-            button16.Name = "button16";
-            button16.Size = new System.Drawing.Size(100, 100);
-            button16.TabIndex = 9;
-            button16.TabStop = false;
-            button16.UseVisualStyleBackColor = false;
-            button16.Click += button1_Click;
+            this.button16.BackColor = System.Drawing.SystemColors.Window;
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.Location = new System.Drawing.Point(525, 312);
+            this.button16.Margin = new System.Windows.Forms.Padding(0);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(100, 100);
+            this.button16.TabIndex = 9;
+            this.button16.TabStop = false;
+            this.button16.UseVisualStyleBackColor = false;
             // 
             // openFileDialog1
             // 
-            openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // mix
             // 
-            mix.BackColor = System.Drawing.SystemColors.Window;
-            mix.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            mix.Location = new System.Drawing.Point(12, 218);
-            mix.Name = "mix";
-            mix.Size = new System.Drawing.Size(200, 38);
-            mix.TabIndex = 18;
-            mix.Text = "KARIŞTIR";
-            mix.UseVisualStyleBackColor = false;
-            mix.Click += mix_Click;
+            this.mix.BackColor = System.Drawing.SystemColors.Window;
+            this.mix.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.mix.Location = new System.Drawing.Point(12, 218);
+            this.mix.Name = "mix";
+            this.mix.Size = new System.Drawing.Size(200, 38);
+            this.mix.TabIndex = 18;
+            this.mix.Text = "KARIŞTIR";
+            this.mix.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            label1.Location = new System.Drawing.Point(639, 48);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(67, 27);
-            label1.TabIndex = 19;
-            label1.Text = "SKOR:";
+            this.label1.AutoSize = true;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(639, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 27);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "SKOR:";
             // 
             // skorLabel
             // 
-            skorLabel.AutoSize = true;
-            skorLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            skorLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            skorLabel.Location = new System.Drawing.Point(712, 48);
-            skorLabel.Name = "skorLabel";
-            skorLabel.Size = new System.Drawing.Size(25, 27);
-            skorLabel.TabIndex = 21;
-            skorLabel.Text = "0";
+            this.skorLabel.AutoSize = true;
+            this.skorLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.skorLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.skorLabel.Location = new System.Drawing.Point(712, 48);
+            this.skorLabel.Name = "skorLabel";
+            this.skorLabel.Size = new System.Drawing.Size(25, 27);
+            this.skorLabel.TabIndex = 21;
+            this.skorLabel.Text = "0";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            label2.Location = new System.Drawing.Point(639, 122);
-            label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(203, 27);
-            label2.TabIndex = 22;
-            label2.Text = "EN YÜKSEK SKORLAR";
+            this.label2.AutoSize = true;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(639, 122);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(203, 27);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "EN YÜKSEK SKORLAR";
             // 
             // isimLabel
             // 
-            isimLabel.AutoSize = true;
-            isimLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            isimLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            isimLabel.Location = new System.Drawing.Point(639, 12);
-            isimLabel.Name = "isimLabel";
-            isimLabel.Size = new System.Drawing.Size(88, 27);
-            isimLabel.TabIndex = 23;
-            isimLabel.Text = "İSMİNİZ";
+            this.isimLabel.AutoSize = true;
+            this.isimLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.isimLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.isimLabel.Location = new System.Drawing.Point(639, 12);
+            this.isimLabel.Name = "isimLabel";
+            this.isimLabel.Size = new System.Drawing.Size(88, 27);
+            this.isimLabel.TabIndex = 23;
+            this.isimLabel.Text = "İSMİNİZ";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            label3.Location = new System.Drawing.Point(639, 85);
-            label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(85, 27);
-            label3.TabIndex = 24;
-            label3.Text = "HAMLE:";
+            this.label3.AutoSize = true;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(639, 85);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(85, 27);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "HAMLE:";
             // 
             // hamleLabel
             // 
-            hamleLabel.AutoSize = true;
-            hamleLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            hamleLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            hamleLabel.Location = new System.Drawing.Point(730, 85);
-            hamleLabel.Name = "hamleLabel";
-            hamleLabel.Size = new System.Drawing.Size(25, 27);
-            hamleLabel.TabIndex = 25;
-            hamleLabel.Text = "0";
+            this.hamleLabel.AutoSize = true;
+            this.hamleLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.hamleLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.hamleLabel.Location = new System.Drawing.Point(730, 85);
+            this.hamleLabel.Name = "hamleLabel";
+            this.hamleLabel.Size = new System.Drawing.Size(25, 27);
+            this.hamleLabel.TabIndex = 25;
+            this.hamleLabel.Text = "0";
             // 
             // listBox1
             // 
-            listBox1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 25;
-            listBox1.Location = new System.Drawing.Point(639, 161);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new System.Drawing.Size(203, 254);
-            listBox1.TabIndex = 26;
+            this.listBox1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 25;
+            this.listBox1.Location = new System.Drawing.Point(639, 161);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(203, 254);
+            this.listBox1.TabIndex = 26;
             // 
             // Form1
             // 
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            BackColor = System.Drawing.SystemColors.Window;
-            BackgroundImage = Properties.Resources._2156727b8087808495258eda220b6b0c;
-            BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            ClientSize = new System.Drawing.Size(859, 455);
-            Controls.Add(listBox1);
-            Controls.Add(hamleLabel);
-            Controls.Add(label3);
-            Controls.Add(isimLabel);
-            Controls.Add(label2);
-            Controls.Add(skorLabel);
-            Controls.Add(label1);
-            Controls.Add(mix);
-            Controls.Add(button9);
-            Controls.Add(button10);
-            Controls.Add(button11);
-            Controls.Add(button12);
-            Controls.Add(button13);
-            Controls.Add(button14);
-            Controls.Add(button15);
-            Controls.Add(button16);
-            Controls.Add(button8);
-            Controls.Add(button7);
-            Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(original);
-            Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
-            MaximizeBox = false;
-            MinimizeBox = false;
-            Name = "Form1";
-            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            Text = "Puzzle Game";
-            FormClosing += Form1_FormClosing;
-            Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)original).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.BackgroundImage = global::puzzleGame.Properties.Resources._2156727b8087808495258eda220b6b0c;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(859, 455);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.hamleLabel);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.isimLabel);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.skorLabel);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.mix);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.button11);
+            this.Controls.Add(this.button12);
+            this.Controls.Add(this.button13);
+            this.Controls.Add(this.button14);
+            this.Controls.Add(this.button15);
+            this.Controls.Add(this.button16);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.original);
+            this.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Puzzle Game";
+            ((System.ComponentModel.ISupportInitialize)(this.original)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

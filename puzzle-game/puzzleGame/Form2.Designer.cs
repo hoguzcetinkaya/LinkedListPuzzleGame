@@ -29,65 +29,62 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            okey = new System.Windows.Forms.Button();
-            textBox1 = new System.Windows.Forms.TextBox();
-            label1 = new System.Windows.Forms.Label();
-            SuspendLayout();
+            this.okey = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
             // 
             // okey
             // 
-            okey.BackColor = System.Drawing.SystemColors.Window;
-            okey.BackgroundImage = Properties.Resources.check_mark;
-            okey.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            okey.Location = new System.Drawing.Point(209, 61);
-            okey.Margin = new System.Windows.Forms.Padding(5);
-            okey.Name = "okey";
-            okey.Size = new System.Drawing.Size(31, 33);
-            okey.TabIndex = 19;
-            okey.UseVisualStyleBackColor = false;
-            okey.Click += okey_Click;
+            this.okey.BackColor = System.Drawing.SystemColors.Window;
+            this.okey.BackgroundImage = global::puzzleGame.Properties.Resources.check_mark;
+            this.okey.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.okey.Location = new System.Drawing.Point(209, 61);
+            this.okey.Margin = new System.Windows.Forms.Padding(5);
+            this.okey.Name = "okey";
+            this.okey.Size = new System.Drawing.Size(31, 33);
+            this.okey.TabIndex = 19;
+            this.okey.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
-            textBox1.Location = new System.Drawing.Point(33, 61);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new System.Drawing.Size(168, 33);
-            textBox1.TabIndex = 20;
-            textBox1.TextChanged += textBox1_TextChanged;
-            textBox1.KeyDown += textBox1_KeyDown;
+            this.textBox1.Location = new System.Drawing.Point(33, 61);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(168, 33);
+            this.textBox1.TabIndex = 20;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.BackColor = System.Drawing.SystemColors.Window;
-            label1.Location = new System.Drawing.Point(33, 33);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(206, 25);
-            label1.TabIndex = 21;
-            label1.Text = "KULLANICI ADI GİRİN";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Window;
+            this.label1.Location = new System.Drawing.Point(33, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(206, 25);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "KULLANICI ADI GİRİN";
             // 
             // Form2
             // 
-            AcceptButton = okey;
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            BackgroundImage = Properties.Resources._2156727b8087808495258eda220b6b0c;
-            BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            ClientSize = new System.Drawing.Size(273, 126);
-            Controls.Add(label1);
-            Controls.Add(textBox1);
-            Controls.Add(okey);
-            Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
-            Margin = new System.Windows.Forms.Padding(5);
-            MaximizeBox = false;
-            MinimizeBox = false;
-            Name = "Form2";
-            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            Text = "Kullanıcı Adı";
-            Load += Form2_Load;
-            ResumeLayout(false);
-            PerformLayout();
+            this.AcceptButton = this.okey;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackgroundImage = global::puzzleGame.Properties.Resources._2156727b8087808495258eda220b6b0c;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(273, 126);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.okey);
+            this.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Hoşgeldin";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
