@@ -42,7 +42,7 @@ namespace puzzleGame
             {
                 mix.Enabled = true;
                 original.Image = Image.FromFile(openFileDialog1.FileName);
-                parcala();  // OpenFileDialog ile yüklenen resmin parçalama işlemi için gerekli fonksiyon
+                parcala();
             }
 
         }
@@ -101,7 +101,7 @@ namespace puzzleGame
             isimLabel.Text = kullaniciAdi;//Form2'den gelen kullanıcı adı labela aktarılıyor
         }
 
-        private void karistir()//Sadece 16. parça doğru yerde olunca en az bir tanesi doğru yerde diye algılamıyor
+        private void karistir()
         {
             if (original.Image != null)
             {
